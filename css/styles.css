@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Roboto&display=swap");
+
+/*  GENERAL */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML */
+
+html {
+  width: 1500px;
+}
+
+/*  HEADER */
+
+.contenedor-titulo1 {
+  left: 20px;
+  position: sticky;
+  top: 0px;
+}
+.descuentosSpan {
+  left: 20px;
+  position: relative;
+}
+
+header {
+  background-color: #d1891c;
+}
+
+h1 {
+  align-items: center;
+  box-shadow: 1px 10px 5px #4b4b4b;
+  display: flex;
+  height: 101px;
+  position: sticky;
+  top: 0px;
+}
+
+.tituloFondo {
+  background-color: #00669f;
+  color: white;
+  height: 101px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+/* BODY */
+
+.ayuda {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 100px;
+  width: 1499px;
+  z-index: 2;
+}
+
+.ayuda1 {
+  align-items: center;
+  background-color: #00669f;
+  border-radius: 100px;
+  bottom: 50px;
+  color: #fff9f9;
+  display: flex;
+  font-size: 60px;
+  height: 70px;
+  justify-content: center;
+  position: relative;
+  width: 70px;
+}
+
+.carta {
+  background-color: #f3f3f3;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 1px 10px 5px #4b4b4b;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.contenedorCorazon {
+  left: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.contenedorCartas {
+  align-items: center;
+  display: flex;
+  height: 1000px;
+  justify-content: space-around;
+}
+
+.espaciador {
+  height: 90px;
+  width: 330px;
+}
+.bloqueContenido {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.imagen-top {
+  border: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 350px;
+}
+
+.tUno,
+.tDos,
+.tRes,
+.tCuatro,
+.rCuatro {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tUno {
+  background-image: url(../img/Batman1.png);
+}
+
+.rUno {
+  background-image: url(../img/Bat1.png);
+}
+.tDos {
+  background-image: url(../img/Fondo\ Maravilla.png);
+}
+
+.rDos {
+  background-image: url(../img/Mujer\ maravilla.png);
+}
+
+.tTres {
+  background-image: url(../img/Fondo\ superman.png);
+}
+
+.rTres {
+  background-image: url(../img/Foto\ superman.png);
+}
+
+.tCuatro {
+  background-image: url(../img/Harley.png);
+}
+
+.rCuatro {
+  background-image: url(../img/Har1.png);
+}
+
+.imgRedonda {
+  align-self: center;
+  background-size: contain;
+  height: 118px;
+  position: absolute;
+  top: 140px;
+  width: 120px;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.tituloImg {
+  text-align: center;
+}
+.descripcion {
+  height: 200px;
+  position: relative;
+  top: 10px;
+  width: 320px;
+}
+input {
+  background-color: #00669f;
+  color: #f3f3f3;
+  height: 48.52px;
+  margin: 20px;
+  width: 128.78px;
+}
+
+/* Footer */
+
+footer {
+  align-items: center;
+  background-color: #00669f;
+  color: #fff9f9;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+h3 {
+  padding-left: 20px;
+}
+.imagenFooter {
+  height: 68px;
+  width: 248px;
+}
+
+/* TABLETS */
+
+@media (max-width: 768px) and (min-width: 531px) {
+  /* HTML Y BODY */
+  html,
+  body,
+  .contenedorCartas {
+    flex-wrap: wrap;
+    height: 150vh;
+    width: 100vw;
+  }
+
+  /* BODY */
+
+  .ayuda {
+    position: fixed;
+    top: 980px;
+  }
+
+  .ayuda1 {
+    height: 60px;
+    width: 60px;
+  }
+
+  .contenedorCartas,
+  .ayuda {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .carta,
+  .espaciador {
+    position: relative;
+    width: 265px;
+  }
+
+  .contenedorCorazon,
+  .descripcion {
+    width: 20%;
+  }
+
+  .descripcion p {
+    font-size: 80%;
+  }
+  .descripcion {
+    width: 36vw;
+  }
+  .imgRedonda {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    position: absolute;
+    top: 105px;
+    width: 100px;
+  }
+  .imagen-top {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 155px;
+    width: 266px;
+  }
+
+  /* FOOTER */
+
+  .imagenFooter {
+    background-image: url(../img/GitHub.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 130px;
+  }
+
+  footer {
+    font-size: 50%;
+    height: 50px;
+  }
+  .imagenFooter {
+    position: relative;
+    right: 10px;
+  }
+}
+
+/* CELULARES */
+
+@media screen and (max-width: 530px) {
+  * {
+    font-size: 105%;
+  }
+
+  /* HTML */
+
+  html {
+    width: 100%;
+  }
+
+  /* BODY */
+
+  .ayuda1 {
+    font-size: 34px;
+    height: 40px;
+    width: 40px;
+  }
+  .ayuda {
+    position: fixed;
+    top: 500px;
+    width: 100%;
+  }
+
+  .carta {
+    height: 55vh;
+    margin-top: 40px;
+    width: 65vw;
+  }
+  .contenedorCartas {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .cartaCuatro {
+    display: none;
+  }
+  .descripcion {
+    height: 10vh;
+    width: 55vw;
+  }
+
+  .imgRedonda {
+    position: relative;
+    top: 75px;
+  }
+
+  .imagen-top {
+    border-radius: 20px 20px 0 0;
+    width: auto;
+  }
+
+  p {
+    font-size: 40%;
+  }
+
+  input {
+    height: 5vh;
+    width: 30vw;
+  }
+
+  /* FOOTER */
+
+  footer {
+    align-items: center;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    position: sticky;
+  }
+  .imagenFooter {
+    background-image: url(../img/GitHub.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 120px;
+  }
+}
